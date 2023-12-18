@@ -1,0 +1,182 @@
+
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: left;
+  }
+  
+  *{
+    box-sizing: border-box;
+  }
+  
+  body {
+    --background-color: #f5f5f5;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: courier, monospace;
+  
+    background-image: url(/src/public/146891756-portátil-moderno-en-el-escritorio-con-material-de-oficina-nuevo-concepto-de-lugar-de-trabajo.jpg);
+    background-repeat: no-repeat, repeat;
+    background-size: cover
+  }
+  
+  @media screen and (min-width: 620px) {
+    body {
+      font-size: 1.9rem;
+      line-height: 1.31579;
+      font-family: courier, monospace;
+    }
+  }
+  
+  h1 {
+    color: black;
+    letter-spacing: -2px;
+    text-align: center;
+  }
+  
+  li {
+    align-items: center;
+    margin: 2px;
+    border-style: outset;
+  }
+  
+  .container {
+   
+    margin: auto;
+    background-color: lightgray;
+    text-align: center;
+  
+    color: #555;
+    font-size: 22px;
+    padding: 0 !important;
+   
+    font-family: courier, monospace;
+    border: 1px solid #dedede;
+  
+    width: 100%;
+    position: relative;
+    background-color: lightyellow;
+    --box-shadow: 0px 2px 4px rgba(0,0,0,.5);
+    padding: 60px 0px 30px 0px;
+  
+    box-shadow: 0px 5px 10px rgba(11, 10, 10, 0.3);
+    transition: 0.3s;
+  }
+  
+  .todo-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: .5rem;
+  
+    color: #555;
+    font-size: 22px;
+    padding: 0 !important;
+    width: 500px;
+    font-family: courier, monospace;
+    border: 1px solid #dedede;
+   
+  }
+  
+  .todo-list li:hover {
+    background-color: #f0f0f0;
+    transition: all 0.2s;
+    -moz-transition:    all 0.2s;
+    -ms-transition:     all 0.2s;
+    -o-transition:      all 0.2s;
+  }
+  .todo-list li {
+    list-style: none;
+    border-bottom: 1px dotted #7d7c7c;
+    border-top: 1px dotted #7d7c7c;
+    border-left: 1px dotted #7d7c7c;
+    border-right: 1px dotted hsl(0, 0%, 49%);
+  
+    text-indent: 25px;
+    height: auto;
+    padding: 10px;
+    text-transform: capitalize;
+    text-align: left;
+  }
+  
+  .done{
+    background-color: rgb(242, 234, 116);
+    color: white;
+  }
+  
+  
+  .todo-item {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .new-todo-container {
+    list-style: none;
+    border-bottom: 1px dotted #ccc;
+    text-indent: 55px;
+    height: auto;
+    padding: 10px;
+    text-transform: capitalize;
+  }
+  
+  
+  .container:before,
+  .container:after{
+    content: '';
+    display: block;
+    height: 100%;
+    border-left: 1px solid #f00;
+    position: absolute;
+    left:40px;
+    top:0;
+  }
+  .container:after{
+    left:36px;
+  }
+  
+  .btn {
+    display: inline-block; 
+    font-size: 12px;
+    line-height: 18px;
+    cursor: pointer;
+    background-color: lightskyblue; 
+    border-radius: 50%;  
+    border:none;
+    font-weight: bolder;
+    margin-left: 10px;  
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(11, 10, 10, 0.3);
+    transition: 0.3s;
+   
+  }
+  
+  .delete{
+    display: inline-block;
+    background-color: #ccc;
+    font-size: 12px;
+    line-height: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s;
+    box-shadow: 0px 5px 10px rgba(11, 10, 10, 0.3);
+      }
+  
+      .todo-item-text{
+        width: 600px;
+        color: #555;
+        font-size: 22px;
+        padding: 0 !important;
+        font-family: courier, monospace;
+        
+      }
+  
+      input[type=checkbox] {
+        margin: 4px 0 0;
+        line-height: normal;
+        width: 20px;
+        height: 20px;
+        }
